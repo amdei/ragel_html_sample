@@ -21,6 +21,14 @@ In general, if any text, except spaces, exists before ```'<a'``` tag it makes pa
 Please find in this repo intentionally simplified sample with grammar, aiming to work as C program ( ngx_url_html_portion.rl ).
 There is also input file input-nbsp.html , which expected to contain input for the application.
 
+
+
+Requirements
+============
+
+You need [Ragel](http://www.complang.org/ragel/). You can get your platform binaries from the website URL or build from the source using gcc.
+
+
 In order to play with it, make .c-file from grammar:
 ```
     ragel ngx_url_html_portion.rl
